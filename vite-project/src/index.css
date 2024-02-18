@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--DarkGrayishBlue);
+}
+
+.body {
+  
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  background-color: var(--GrayishBlue);
+  padding: 1.25rem 1.25rem 3rem;
+  margin-left: 80vh;
+  margin-top: 100px;
+  color: #ffffff;
+  border-radius: 1.25rem;
+  height: 350px;
+  width: 450px;
+}
+
+.card h1 {
+  color: var(--NeonGreen);
+  background-color: var(--GrayishBlue);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.4rem;
+
+}
+
+.card p {
+  font-size: 28px;
+  background-color: var(--GrayishBlue);
+  color: var(--LightCyan);
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.card div{
+  background-color: var(--GrayishBlue);
+}
+
+.dividerimg {
+  width: 80%;
+  background-color: var(--GrayishBlue);
+  margin-left: 8%;
+}
+
+.card button {
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  cursor: pointer;
+}
+
+.card button img {
+  border-radius: 5px;
+  background-color: var(--NeonGreen);
+}
+
+.card button:hover {
+  border: 0.15em solid var(--NeonGreen);
+  perspective: 2em;
+  -webkit-box-shadow: inset 0px 0px 0.6em 0px var(--NeonGreen),
+    0px 0px 0.6em 0px var(--NeonGreen);
+  -moz-box-shadow: inset 0px 0px 0.6em 0px var(--NeonGreen),
+    0px 0px 0.5em 0px var(--NeonGreen);
+  box-shadow: inset 0px 0px 0.6em 0px var(--NeonGreen),
+    0px 0px 0.6em 0px var(--NeonGreen);
+  animation: border-flicker 2s linear infinite;
+}
